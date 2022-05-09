@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="https://www.alura.com.br/" target="_blank">
+        <img
+          src="./assets/logo-alura.png"
+          alt="logo da alura com a letra inicial a"
+      /></a>
+    </header>
+    <main class="main">
+      <section>
+        <textarea
+          class="input-texto"
+          cols="40"
+          rows="6"
+          placeholder="Digite seu texto:"
+          onfocus="this.value=''"
+        ></textarea>
+
+        <div class="footnote">
+          <img
+            src="./assets/logo-atencao.png"
+            alt="imagem pequena mostrando atenção"
+          />
+          <label>Apenas letras minúsculas e sem acento.</label>
+        </div>
+
+        <div class="buttons">
+          <button class="encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="desencriptar" onclick="btnDesencriptar()  ">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea
+          class="message"
+          cols="18"
+          rows="6"
+          placeholder="Nenhuma mensagem encontrada..."
+        ></textarea>
+
+        <div class="button-copy">
+          <button id="copy">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>Desenvolvido por: Iasmim Carvalho</h4>
+
+      <div class="social-links">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/iasmim-carvalho3008/"
+              ><img
+                class="linkedin"
+                src="./assets/linkedin.png"
+                alt="logo do linkedin"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/iasmimcarv"
+              ><img src="./assets/github.png" alt="logo do github"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
